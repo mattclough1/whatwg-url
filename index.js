@@ -5,6 +5,8 @@ const { isPlainObject } = require('is-plain-object');
 const deepmerge = require('deepmerge');
 const parseSrcset = require('parse-srcset');
 const { parse: postcssParse } = require('postcss');
+const { URL } = require('whatwg-url');
+
 // Tags that can conceivably represent stand-alone media.
 const mediaTags = [
   'img', 'audio', 'video', 'picture', 'svg',
